@@ -10,11 +10,12 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   double _topIconOpacity = 0.1;
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    Future.delayed(const Duration(milliseconds: 500), (){
+    Future.delayed(const Duration(milliseconds: 500), () {
       setState(() {
         _topIconOpacity = 1.0;
       });
@@ -29,27 +30,33 @@ class _HomeScreenState extends State<HomeScreen> {
         padding: const EdgeInsets.all(15.0),
         child: Column(
           children: [
+            // TOP ICONS
             AnimatedOpacity(
               opacity: _topIconOpacity,
               duration: const Duration(milliseconds: 800),
-              child: const SizedBox(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Icon(
-                      Icons.arrow_back_ios_new,
-                      color: AppColors.primaryColor,
-                    ),
-                    Icon(
-                      Icons.search_rounded,
-                      color: AppColors.primaryColor,
-                    )
-                  ],
-                ),
+              child: const Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Icon(
+                    Icons.arrow_back_ios_new,
+                    color: AppColors.primaryColor,
+                  ),
+                  Icon(
+                    Icons.search_rounded,
+                    color: AppColors.primaryColor,
+                  )
+                ],
               ),
             ),
 
-
+            // HEADER
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text("Wireless\nHeadphones"),
+                Image.asset("name")
+              ],
+            )
           ],
         ),
       ),
