@@ -6,4 +6,5 @@ class FontSizes {
   static const mediumFont = 18.0;
   static const bigFont = 20.0;
   static const biggerFont = 22.0;
+  static const biggestFont = 25.0;
 }
