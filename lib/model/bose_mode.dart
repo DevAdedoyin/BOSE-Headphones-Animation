@@ -9,7 +9,7 @@ class BoseModel {
 }
 
 class BoseModelListClass {
-  final boseModelList = [
+  static final  boseModelList = [
     BoseModel(headPhoneImage: "assets/images/headphones1.png", headPhoneName: "QuietComfort 35 wireless headphones II", headPhonePrice: "\$449.99"),
     BoseModel(headPhoneImage: "assets/images/headphones2.png", headPhoneName: "SoundLink® aroundear wireless headphones", headPhonePrice: "\$269.99"),
     BoseModel(headPhoneImage: "assets/images/headphones3.png", headPhoneName: "Bose on-ear wireless headphones", headPhonePrice: "\$209.99"),

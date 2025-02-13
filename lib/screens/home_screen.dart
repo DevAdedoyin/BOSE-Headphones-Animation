@@ -1,5 +1,6 @@
 import 'package:bose_ecommerce_animation/constants/colors.dart';
 import 'package:bose_ecommerce_animation/constants/font_sizes.dart';
+import 'package:bose_ecommerce_animation/model/bose_mode.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -36,8 +37,8 @@ class _HomeScreenState extends State<HomeScreen> {
         padding: const EdgeInsets.all(15.0),
         child: Column(
           children: [
-            const SizedBox(
-              height: 20,
+            SizedBox(
+              height: size.height * 0.05,
             ),
 
             // TOP ICONS OPACITY ANIMATIONS
@@ -99,18 +100,61 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
 
-            const SizedBox(
-              height: 20,
-            ),
-
             // GRIDVIEW ANIMATIONS
-            GridView.builder(
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2),
-                itemCount: 4,
-                itemBuilder: (_, index) {
-                  return Container();
-                })
+            Flexible(
+              fit: FlexFit.tight,
+              child: GridView.builder(
+                  padding: EdgeInsets.zero,
+                  shrinkWrap: true,
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      childAspectRatio: 1 / 1.5,
+                      crossAxisCount: 2,
+                      mainAxisSpacing: 7,
+                      crossAxisSpacing: 5),
+                  itemCount: 4,
+                  itemBuilder: (_, index) {
+                    return AnimatedContainer(
+                      duration: Duration(milliseconds: 800, ),
+                      child: Card(
+                        color: Colors.white,
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 8.0),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              SizedBox(
+                                child: Image.asset(
+                                  BoseModelListClass
+                                      .boseModelList[index].headPhoneImage!,
+                                  height: 120,
+                                ),
+                              ),
+                              SizedBox(
+                                width: size.width * 0.37,
+                                child: Text(
+                                  BoseModelListClass
+                                      .boseModelList[index].headPhoneName!,
+                                  style: const TextStyle(
+                                      fontSize: FontSizes.smallMediumFont,
+                                      color: AppColors.primaryColor,
+                                      fontWeight: FontWeight.w700),
+                                ),
+                              ),
+                              Container(
+                                alignment: Alignment.centerLeft,
+                                padding: const EdgeInsets.only(left: 15.0),
+                                child: Text(BoseModelListClass
+                                    .boseModelList[index].headPhonePrice!,  style: const TextStyle(
+                                    color: Colors.grey,
+                                    fontWeight: FontWeight.w900),),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    );
+                  }),
+            )
           ],
         ),
       ),
