@@ -104,6 +104,13 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
 
             // GRIDVIEW ANIMATIONS
+            GridView.builder(
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2),
+                itemCount: 4,
+                itemBuilder: (_, index) {
+                  return Container();
+                })
           ],
         ),
       ),
