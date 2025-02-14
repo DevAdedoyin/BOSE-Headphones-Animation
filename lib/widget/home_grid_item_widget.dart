@@ -28,18 +28,18 @@ class HomeGridItemWidget extends StatelessWidget {
               SizedBox(
                 child: Image.asset(
                   BoseModelListClass.boseModelList[index].headPhoneImage!,
-                  height: 120,
+                  height: 110,
                 ),
               ),
               SizedBox(
                 height: size.height * 0.01,
               ),
               SizedBox(
-                width: size.width * 0.37,
+                width: size.width * 0.38,
                 child: Text(
                   BoseModelListClass.boseModelList[index].headPhoneName!,
                   style: const TextStyle(
-                      fontSize: FontSizes.smallMediumFont,
+                      fontSize: FontSizes.smallFont,
                       color: AppColors.primaryColor,
                       fontWeight: FontWeight.w700),
                 ),
@@ -53,8 +53,11 @@ class HomeGridItemWidget extends StatelessWidget {
                 child: Text(
                   BoseModelListClass.boseModelList[index].headPhonePrice!,
                   style: const TextStyle(
-                      color: Colors.grey, fontWeight: FontWeight.w900),
+                      color: Colors.grey, fontWeight: FontWeight.w600),
                 ),
+              ),
+              SizedBox(
+                height: size.height * 0.01,
               ),
             ],
           ),
