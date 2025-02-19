@@ -1,4 +1,5 @@
 import 'package:bose_ecommerce_animation/constants/colors.dart';
+import 'package:bose_ecommerce_animation/constants/font_sizes.dart';
 import 'package:flutter/material.dart';
 
 import '../model/bose_mode.dart';
@@ -22,8 +23,9 @@ class _DetailScreenState extends State<DetailScreen> {
     return Scaffold(
       backgroundColor: Colors.black,
       body: Padding(
-        padding: const EdgeInsets.all(12.0),
+        padding: const EdgeInsets.all(15.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(
               height: size.height * 0.05,
@@ -65,10 +67,12 @@ class _DetailScreenState extends State<DetailScreen> {
               ),
             ),
 
+            //
             SizedBox(
               height: size.height * 0.02,
             ),
 
+            //
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -79,9 +83,9 @@ class _DetailScreenState extends State<DetailScreen> {
                   child: const Text(
                     "LIMITED EDITION",
                     style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                    ),
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: FontSizes.smallerFont),
                   ),
                 ),
                 Row(
@@ -111,6 +115,58 @@ class _DetailScreenState extends State<DetailScreen> {
                   }),
                 )
               ],
+            ),
+
+            //
+            SizedBox(
+              height: size.height * 0.03,
+            ),
+
+            //
+            SizedBox(
+              width: double.maxFinite,
+              child: Text(
+                BoseModelListClass.boseModelList[widget.index].headPhoneName!,
+                textAlign: TextAlign.left,
+                style: const TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: FontSizes.biggerFont),
+              ),
+            ),
+
+            //
+            SizedBox(
+              height: size.height * 0.04,
+            ),
+
+            //
+            SizedBox(
+              child: Container(
+                width: size.width * 0.40,
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 15, vertical: 12),
+                alignment: Alignment.centerLeft,
+                decoration:  BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(6)
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    const Icon(
+                      Icons.shopping_cart,
+                      color: Colors.black,
+                    ),
+                    Text(BoseModelListClass
+                        .boseModelList[widget.index].headPhonePrice!,
+                      style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: FontSizes.smallMediumFont),
+                    )
+                  ],
+                ),
+              ),
             )
           ],
         ),
