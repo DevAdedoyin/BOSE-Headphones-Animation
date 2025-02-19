@@ -62,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen>
       }
     });
 
-    _spacingAnimation = Tween<double>(begin: 0.0, end: 12.0).animate(
+    _spacingAnimation = Tween<double>(begin: 0.0, end: 15.0).animate(
       CurvedAnimation(parent: _spaceController, curve: Curves.easeInOut),
     );
 
@@ -154,7 +154,7 @@ class _HomeScreenState extends State<HomeScreen>
 
             // GRIDVIEW ANIMATIONS
             Flexible(
-              fit: FlexFit.tight,
+              // fit: FlexFit.tight,
               child: AnimatedBuilder(
                   animation: _spacingAnimation,
                 builder: (context, child) {
@@ -166,7 +166,7 @@ class _HomeScreenState extends State<HomeScreen>
                           crossAxisCount: 2,
                           mainAxisSpacing: _spacingAnimation.value,
                           crossAxisSpacing: _spacingAnimation.value),
-                      itemCount: 4,
+                      itemCount: BoseModelListClass.boseModelList.length,
                       itemBuilder: (_, index) {
                         return AnimatedBuilder(
                           animation: _controller,
