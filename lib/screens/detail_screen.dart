@@ -1,3 +1,4 @@
+import 'package:bose_ecommerce_animation/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 import '../model/bose_mode.dart';
@@ -62,10 +63,64 @@ class _DetailScreenState extends State<DetailScreen> {
                   ),
                 ],
               ),
+            ),
+
+            SizedBox(
+              height: size.height * 0.02,
+            ),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  color: Colors.grey.shade700,
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
+                  child: const Text(
+                    "LIMITED EDITION",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                Row(
+                  children: List.generate(3, (listIndex) {
+                    return Container(
+                      margin: const EdgeInsets.only(left: 5),
+                      decoration: BoxDecoration(
+                          border: Border.all(
+                              color: listIndex != 0
+                                  ? AppColors.primaryColor
+                                  : colors[listIndex],
+                              width: 2),
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(20)),
+                      height: 25,
+                      width: 25,
+                      child: Container(
+                        margin: const EdgeInsets.all(2),
+                        height: 15,
+                        width: 15,
+                        decoration: BoxDecoration(
+                          color: colors[listIndex],
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                      ),
+                    );
+                  }),
+                )
+              ],
             )
           ],
         ),
       ),
     );
   }
+
+  final List<Color> colors = [
+    Colors.grey,
+    Colors.purple,
+    Colors.yellow,
+  ];
 }
