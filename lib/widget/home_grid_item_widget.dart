@@ -16,7 +16,7 @@ class HomeGridItemWidget extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return GestureDetector(
       onTap: () {
-        Navigator.push(
+       index == 3 ? (){} : Navigator.push(
           context,
           MaterialPageRoute(
             builder: (context) => DetailScreen(

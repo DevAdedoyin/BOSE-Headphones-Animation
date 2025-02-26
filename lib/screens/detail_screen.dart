@@ -37,11 +37,11 @@ class _DetailScreenState extends State<DetailScreen> {
               height: size.height * 0.6,
               child: Stack(
                 children: [
-                  IconButton(
-                    onPressed: () {
+                  GestureDetector(
+                    onTap: () {
                       Navigator.pop(context);
                     },
-                    icon: const Icon(Icons.arrow_back_ios_new),
+                    child: const Icon(Icons.arrow_back_ios_new, color: Colors.white,),
                   ),
                   Positioned(
                     right: _rightPosition,
@@ -147,10 +147,9 @@ class _DetailScreenState extends State<DetailScreen> {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 15, vertical: 12),
                 alignment: Alignment.centerLeft,
-                decoration:  BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(6)
-                ),
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(6)),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
@@ -158,8 +157,9 @@ class _DetailScreenState extends State<DetailScreen> {
                       Icons.shopping_cart,
                       color: Colors.black,
                     ),
-                    Text(BoseModelListClass
-                        .boseModelList[widget.index].headPhonePrice!,
+                    Text(
+                      BoseModelListClass
+                          .boseModelList[widget.index].headPhonePrice!,
                       style: const TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: FontSizes.smallMediumFont),
