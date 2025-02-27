@@ -164,7 +164,7 @@ class _HomeScreenState extends State<HomeScreen>
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                           childAspectRatio: 3/4.35,
                           crossAxisCount: 2,
-                          mainAxisSpacing: _spacingAnimation.value,
+                          mainAxisSpacing: 3,
                           crossAxisSpacing: _spacingAnimation.value),
                       itemCount: BoseModelListClass.boseModelList.length,
                       itemBuilder: (_, index) {
