@@ -166,6 +166,7 @@ class _DetailScreenState extends State<DetailScreen>
                         duration: const Duration(milliseconds: 1000),
                         child: Container(
                           // height: 300,
+                          width: size.width * 0.93,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -217,11 +218,12 @@ class _DetailScreenState extends State<DetailScreen>
                                 height: size.height * 0.03,
                               ),
                               SizedBox(
-                                width: double.maxFinite,
+                                width: size.width * 0.95,
                                 child: Text(
                                   BoseModelListClass
                                       .boseModelList[widget.index].headPhoneName!,
                                   textAlign: TextAlign.left,
+                                  softWrap: true,
                                   style: const TextStyle(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,
