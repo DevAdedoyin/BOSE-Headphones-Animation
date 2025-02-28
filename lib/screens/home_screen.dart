@@ -19,6 +19,7 @@ class _HomeScreenState extends State<HomeScreen>
   double _rightPosition = -50;
   double _leftGridPosition = -200;
   double _rightGridPosition = 200;
+
   late AnimationController _controller;
   late AnimationController _spaceController;
   late Animation<double> _curvedAnimation;

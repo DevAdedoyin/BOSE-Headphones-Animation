@@ -38,9 +38,12 @@ class HomeGridItemWidget extends StatelessWidget {
                   height: size.height * 0.01,
                 ),
                 SizedBox(
-                  child: Image.asset(
-                    BoseModelListClass.boseModelList[index].headPhoneImage!,
-                    height: 110,
+                  child: Hero(
+                    tag: index,
+                    child: Image.asset(
+                      BoseModelListClass.boseModelList[index].headPhoneImage!,
+                      height: 110,
+                    ),
                   ),
                 ),
                 SizedBox(
