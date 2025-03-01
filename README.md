@@ -1,12 +1,13 @@
 # Bose Headphones E-Commerce Animation App
 
 ## VIDEO DISPLAY
-
-<p align="center">
-  ### IOS 
+### IOS
+<p align="center"> 
   <video width="45%" src="https://github.com/user-attachments/assets/18b9284d-22d9-4c38-b878-22da8bfe7034" controls></video>
-  
-  ### ANDROID
+</p>
+
+### ANDROID
+<p align="center">  
   <video width="45%" src="https://github.com/user-attachments/assets/ac054540-6e3f-411d-874f-8718e3dc5b29" controls></video>
 </p>
 
