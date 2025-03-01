@@ -1,16 +1,98 @@
-# bose_ecommerce_animation
+# Bose Headphones E-Commerce Animation App
 
-A new Flutter project.
+## VIDEO DISPLAY
 
-## Getting Started
+### IOS
+<a href="https://github.com/user-attachments/assets/18b9284d-22d9-4c38-b878-22da8bfe7034" align="center" target="_blank"></a>
 
-This project is a starting point for a Flutter application.
+### ANDROID
+<a href="Uploading Bose app record(1)(1).mp4…" align="center" target="_blank"></a>
 
-A few resources to get you started if this is your first Flutter project:
+<p align="center">
+  <img src="![Simulator Screenshot - iPhone 16 - 2025-03-01 at 15 27 59](https://github.com/user-attachments/assets/0c135453-ab9c-4f9a-86c4-684d6ecc3286)" width="200"/>
+  <img src="![Simulator Screenshot - iPhone 16 - 2025-03-01 at 15 27 38](https://github.com/user-attachments/assets/f6e282cf-0139-4c7c-9881-d5dcc120de93)" width="200"/>
+  <img src="![bose shot 1](https://github.com/user-attachments/assets/92776cc5-9255-43ed-8327-e1bae2d037f5)" width="200"/>
+  <img src="![bose shot 2](https://github.com/user-attachments/assets/06e760aa-4ad2-4e03-b24b-7548090335e1)" width="200"/>
+</p>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## TABLE OF CONTENT
+- Overview
+- Features
+- Technologies Used
+- Installation guide and configuration
+- Project Structure
+- How It Works
+- Future Enhancements
+- License
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## OVERVIEW
+The Bose Headphones E-Commerce Animation App is a visually engaging two page UI built in Flutter to showcase a product display concept for Bose headphones. Designed with smooth animations and an intuitive user experience, this project highlights expertise in Flutter animations, UI design, and navigation.
+
+## FEATURES
+- Modern UI: A sleek, minimalistic e-commerce style interface.
+
+- Smooth Animations: Animated transitions and UI elements for an interactive experience.
+
+- Product Showcase: Displays Bose headphone models with pricing and details.
+
+- Hero Animation: Seamless transition between the product grid and detailed view.
+
+- Grid Layout: A well-structured product grid with dynamic animations.
+
+## TECHNOLOGIES USED
+- Flutter: Cross-platform UI framework.
+
+- Dart: Programming language for Flutter.
+
+- Hero Animation: For smooth navigation between pages.
+
+- AnimatedContainer & AnimatedPositioned: Used to enhance user experience with fluid motion.
+
+## INSTALLATION
+Clone this repository
+```git clone https://github.com/yourusername/bose-ecommerce-animation.git```
+
+Navigate to the project directory
+```cd bose-ecommerce-animation```
+
+Install dependencies
+```flutter pub get```
+
+Run the app
+```flutter run```
+
+##PROJECT STRUCTURE
+```
+lib/
+|-- constants/
+|   |-- colors.dart
+|   |-- font_sizes.dart
+|-- model/
+|   |-- bose_mode.dart
+|-- screens/
+|   |-- home_screen.dart
+|   |-- detail_screen.dart
+|-- widget/
+|   |-- home_grid_item_widget.dart
+|-- main.dart
+```
+
+## HOW IT WORKS
+### Home Screen
+- Displays a product grid with animated entry transitions.
+- Includes a search and navigation bar.
+
+### Detail Screen
+- Uses Hero animation for seamless transition.
+- Displays product details with interactive animations.
+- Includes a color selection feature.
+
+## FUTURE ENHANCEMENTS
+- State Management Integration (Provider, Riverpod, etc.)
+
+- Backend Integration to fetch real-time product data
+
+- Add to Cart & Checkout Features for a complete e-commerce experience
+
+## LICENSE
+- This project is licensed under the MIT License. See the LICENSE file for more details.
