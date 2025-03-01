@@ -6,7 +6,11 @@
 <a href="https://github.com/user-attachments/assets/18b9284d-22d9-4c38-b878-22da8bfe7034" align="center" target="_blank"></a>
 
 ### ANDROID
-<a href="Uploading Bose app record(1)(1).mp4…" align="center" target="_blank"></a>
+<a href="
+
+Uploading Bose app record(1)(1).mp4…
+
+" align="center" target="_blank"></a>
 
 <p align="center">
   <img src="![Simulator Screenshot - iPhone 16 - 2025-03-01 at 15 27 59](https://github.com/user-attachments/assets/0c135453-ab9c-4f9a-86c4-684d6ecc3286)" width="200"/>
@@ -50,18 +54,26 @@ The Bose Headphones E-Commerce Animation App is a visually engaging two page UI 
 
 ## INSTALLATION
 Clone this repository
-```git clone https://github.com/yourusername/bose-ecommerce-animation.git```
+```
+git clone https://github.com/yourusername/bose-ecommerce-animation.git
+```
 
 Navigate to the project directory
-```cd bose-ecommerce-animation```
+```
+cd bose-ecommerce-animation
+```
 
 Install dependencies
-```flutter pub get```
+```
+flutter pub get
+```
 
 Run the app
-```flutter run```
+```
+flutter run
+```
 
-##PROJECT STRUCTURE
+## PROJECT STRUCTURE
 ```
 lib/
 |-- constants/
