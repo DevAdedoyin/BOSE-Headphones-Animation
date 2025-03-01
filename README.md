@@ -6,7 +6,7 @@
 <a href="https://github.com/user-attachments/assets/18b9284d-22d9-4c38-b878-22da8bfe7034" align="center" target="_blank"></a>
 
 ### ANDROID
-<a href="Uploading BOSE ANDROID.mp4…" align="center" target="_blank"></a>
+<a href="https://github.com/user-attachments/assets/ac054540-6e3f-411d-874f-8718e3dc5b29" align="center" target="_blank"></a>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/0c135453-ab9c-4f9a-86c4-684d6ecc3286" width="200"/>
