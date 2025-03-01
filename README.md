@@ -114,4 +114,4 @@ lib/
 - Add to Cart & Checkout Features for a complete e-commerce experience
 
 ## LICENSE
-- This project is licensed under the MIT License. See the LICENSE file for more details.
+- This project is licensed under the MIT License. See the <a href="https://github.com/DevAdedoyin/BOSE-ecommerce-animation/blob/master/LICENSE">LICENSE</a> file for more details.
