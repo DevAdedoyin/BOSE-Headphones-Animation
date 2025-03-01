@@ -40,18 +40,10 @@ The Bose Headphones E-Commerce Animation App is a visually engaging two page UI 
 
 - Hero Animation: Seamless transition between the product grid and detailed view.
 
-- Grid Layout: A well-structured p
-
-Uploading Bose app.mp4…
-
-roduct grid with dynamic animations.
+- Grid Layout: A well-structured product grid with dynamic animations.
 
 ## TECHNOLOGIES USED
-- Flutter: Cross-platform UI fram
-
-Uploading Bose app.mp4…
-
-ework.
+- Flutter: Cross-platform UI framework.
 
 - Dart: Programming language for Flutter.
 
