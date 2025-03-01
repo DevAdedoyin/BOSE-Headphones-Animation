@@ -6,13 +6,13 @@
 <a href="https://github.com/user-attachments/assets/18b9284d-22d9-4c38-b878-22da8bfe7034" align="center" target="_blank"></a>
 
 ### ANDROID
-<a href="" align="center" target="_blank"></a>
+<a href="Uploading BOSE ANDROID.mp4…" align="center" target="_blank"></a>
 
 <p align="center">
-  <img src="![Simulator Screenshot - iPhone 16 - 2025-03-01 at 15 27 59](https://github.com/user-attachments/assets/0c135453-ab9c-4f9a-86c4-684d6ecc3286)" width="200"/>
-  <img src="![Simulator Screenshot - iPhone 16 - 2025-03-01 at 15 27 38](https://github.com/user-attachments/assets/f6e282cf-0139-4c7c-9881-d5dcc120de93)" width="200"/>
-  <img src="![bose shot 1](https://github.com/user-attachments/assets/92776cc5-9255-43ed-8327-e1bae2d037f5)" width="200"/>
-  <img src="![bose shot 2](https://github.com/user-attachments/assets/06e760aa-4ad2-4e03-b24b-7548090335e1)" width="200"/>
+  <img src="https://github.com/user-attachments/assets/0c135453-ab9c-4f9a-86c4-684d6ecc3286" width="200"/>
+  <img src="https://github.com/user-attachments/assets/f6e282cf-0139-4c7c-9881-d5dcc120de93" width="200"/>
+  <img src="https://github.com/user-attachments/assets/92776cc5-9255-43ed-8327-e1bae2d037f5" width="200"/>
+  <img src="https://github.com/user-attachments/assets/06e760aa-4ad2-4e03-b24b-7548090335e1" width="200"/>
 </p>
 
 ## TABLE OF CONTENT
@@ -37,7 +37,11 @@ The Bose Headphones E-Commerce Animation App is a visually engaging two page UI 
 
 - Hero Animation: Seamless transition between the product grid and detailed view.
 
-- Grid Layout: A well-structured product grid with dynamic animations.
+- Grid Layout: A well-structured p
+
+Uploading Bose app.mp4…
+
+roduct grid with dynamic animations.
 
 ## TECHNOLOGIES USED
 - Flutter: Cross-platform UI fram
